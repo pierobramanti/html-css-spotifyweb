@@ -9,30 +9,15 @@ body{
     color: white
 }
 
-.container{
-    max-width: 1200px;
-}
-
 .deebug{
     border: 1px dashed white;
-    height: 200px;
+    height: 150px;
 }
+
 /* LAYOUT */
-
-header{
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 300px;
-    background-color: rgba(10, 209, 69, 0.925);
-    width:calc(100vw - 300px); 
-    text-align: right;
-
-}
 .bottom-section{
     height: 150px;
     background-color: blue;
-
 }
 
 .top-section{
@@ -40,7 +25,6 @@ header{
     display: flex;
     background-color: red;
 }
-
 .side-bar{
     width: 300px;
     background-color: black;
@@ -59,12 +43,33 @@ header{
     width: 100%;
 }
 
-.col-20{
-    width: calc( 100% / 5);
+.col-15{
+    width: 15%;
+}
+
+.col-16{
+    width: calc( 100% / 6);
 }
 
 .col-50{
     width: 50%;
+}
+
+.col-70{
+    width: 70%;
+}
+
+
+
+header{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 300px;
+    background-color: rgba(0, 0, 0, 0.747);
+    width:calc(100vw - 300px); 
+    text-align: right;
+
 }
 
 /* UTYLITIES */
@@ -95,7 +100,6 @@ header{
 ul{
     text-align: right;
     list-style: none;
-
 }
 
 li{
@@ -114,6 +118,7 @@ li{
 .text-align-center{
     text-align: center;
 }
+
 /* STYLE */
 
 .artist-pic{
@@ -124,17 +129,6 @@ li{
     object-fit: cover;
 }
 
-.pic-logo img{
-    width: 50%;
-}
-
-.upgrade{
-    border: 1px solid white;
-    border-radius: 50px;
-    padding: 10px 20px;
-}
-
-
 /* MEDIA QUEERY */
 
 /* MEDIA QUEERY TABLET */
@@ -142,20 +136,16 @@ li{
 @media screen and (max-width:768px ){
     .side-bar{
         width: 200px;
-        background-color: black;
     }
     
     .main-content{
         width: calc(100vw - 200px);
-        background-color: brown;
     }
 
     header{
         left: 200px;
-        background-color: rgba(10, 209, 69, 0.925);
         width:calc(100vw - 200px); 
     }
-
 
 }
 
@@ -164,18 +154,16 @@ li{
 @media screen and (max-width:480px ){
     .side-bar{
         width: 100px;
-        background-color: black;
     }
     
     .main-content{
         width: calc(100vw - 100px);
-        background-color: brown;
     }
 
     header{
         left: 100px;
-        background-color: rgba(10, 209, 69, 0.925);
         width:calc(100vw - 100px); 
     }
+
 
 }
