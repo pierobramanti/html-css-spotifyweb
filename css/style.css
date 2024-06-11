@@ -45,6 +45,7 @@ body{
 
 .col-15{
     width: 15%;
+    height: 100%;
 }
 
 .col-16{
@@ -57,8 +58,29 @@ body{
 
 .col-70{
     width: 70%;
+    height: 100%;
 }
 
+.col-70 .buttons{
+    border: 1px solid white;
+    text-align: center;
+    height: 50%;
+
+}
+
+.col-70 .playbar-control{
+    height: 50%;
+}
+
+.current, .end{
+    width: 10%;
+    border: 1px solid white;
+}
+
+.playbar{
+    width: 80%;
+    border: 1px solid white;
+}
 
 
 header{
@@ -75,6 +97,10 @@ header{
 /* UTYLITIES */
 .mg-auto{
     margin: 0 auto;
+}
+
+.mg-5{
+    margin: 5px 5px;
 }
 
 .padding-10{
@@ -119,6 +145,13 @@ li{
     text-align: center;
 }
 
+.size-20{
+    font-size: 20px;
+}
+
+.size-30{
+    font-size: 30px;
+}
 /* STYLE */
 
 .artist-pic{
@@ -128,6 +161,7 @@ li{
     height: 100px;
     object-fit: cover;
 }
+
 
 /* MEDIA QUEERY */
 
