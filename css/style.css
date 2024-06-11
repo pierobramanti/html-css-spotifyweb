@@ -16,12 +16,12 @@ body{
 
 /* LAYOUT */
 .bottom-section{
-    height: 150px;
+    height: 100px;
     background-color: blue;
 }
 
 .top-section{
-    height: calc( 100vh - 150px );
+    height: calc( 100vh - 100px );
     display: flex;
     background-color: red;
 }
@@ -33,6 +33,7 @@ body{
 .main-content{
     width: calc(100vw - 300px);
     background-color: brown;
+    overflow-y: auto;
 }
 
 .content{
@@ -43,8 +44,8 @@ body{
     width: 100%;
 }
 
-.col-15{
-    width: 15%;
+.col-25{
+    width: 25%;
     height: 100%;
 }
 
@@ -56,19 +57,19 @@ body{
     width: 50%;
 }
 
-.col-70{
-    width: 70%;
+.col-50{
+    width: 50%;
     height: 100%;
 }
 
-.col-70 .buttons{
+.col-50 .buttons{
     border: 1px solid white;
     text-align: center;
     height: 50%;
 
 }
 
-.col-70 .playbar-control{
+.col-50 .playbar-control{
     height: 50%;
 }
 
@@ -145,6 +146,17 @@ li{
     text-align: center;
 }
 
+.btw{
+    justify-content: space-between;
+}
+
+.around{
+    justify-content: space-around;
+}
+
+.jc-end{
+    justify-content: flex-end;
+}
 .size-20{
     font-size: 20px;
 }
@@ -161,6 +173,36 @@ li{
     height: 100px;
     object-fit: cover;
 }
+
+.listening .img-container{
+    width: 20%;
+}
+
+.img-container img{
+    width: 100%;
+}
+
+
+.volume-bar {
+    display: flex;
+    align-items: center;
+}
+.volume {
+    width: 40px;
+    height: 4px;
+    background: #535353;
+    border-radius: 2px;
+    margin-left: 10px;
+    position: relative;
+}
+.volume-filled {
+    width: 30%; 
+    height: 100%;
+    background: white;
+    border-radius: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;}
 
 
 /* MEDIA QUEERY */
@@ -180,7 +222,10 @@ li{
         left: 200px;
         width:calc(100vw - 200px); 
     }
-
+    
+    .col-lg-25{
+        width: 25%;
+    }
 }
 
 /* MEDIA QUEERY MOBILE */
@@ -197,6 +242,10 @@ li{
     header{
         left: 100px;
         width:calc(100vw - 100px); 
+    }
+
+    .col-mb-50{
+        width: 50%;
     }
 
 
