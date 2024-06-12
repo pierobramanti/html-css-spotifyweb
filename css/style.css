@@ -83,7 +83,6 @@ body{
 }
 
 .col-50 .buttons{
-    border: 1px solid white;
     text-align: center;
     height: 50%;
 
@@ -95,12 +94,10 @@ body{
 
 .current, .end{
     width: 10%;
-    border: 1px solid white;
 }
 
 .playbar{
     width: 80%;
-    border: 1px solid white;
 }
 
 
@@ -261,6 +258,25 @@ header{
 
 .img-container img{
     width: 100%;
+}
+
+.playbar-line{
+    display: flex;
+    align-items: center;  
+}
+
+.right-line{
+    width: 50%;
+    height: 8px;
+    background: #535353;
+    border-radius: 8px;
+}
+
+.left-line{
+    width: 30%;
+    height:8px;
+    background: white;
+    border-radius: 8px;
 }
 
 .volume-bar {
