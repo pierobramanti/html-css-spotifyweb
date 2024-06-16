@@ -14,61 +14,74 @@
     <div class="top-section"> 
         <div class="side-bar">
             <div class="sidebar-container">
-                <div class="menu flex column">
-                    <div class="row">
-                        <div class="logo padding-10">
-                            <img src="./img/logo.svg" alt="logo">
-                        </div>
-                    </div>
-                    <div class="row"> 
-                        <div class="menu-icons choice flex align-items-center border-green padding-l-10">
-                            <div class="icone">
-                                <img src="./img/home.svg" alt="">
+                <div class="menu flex column align-btw ">
+                    <div class="top-sidebar">
+                        <div class="flex">
+                            <div class="logo padding-10">
+                                <img src="./img/logo.svg" alt="logo" class="d-none">
+                                <img src="./img/logo-small.svg" alt="logo-small" class="hidden padding-l-10">
                             </div>
-                            <div><p>Home</p></div>
                         </div>
-                        <div class="menu-icons choice flex align-items-center  padding-l-10">
-                            <div class="icone">
-                                <img src="./img/search.svg" alt="">
+                        <div class="flex column"> 
+                            <div class="menu-icons choice flex align-items-center border-green padding-l-10">
+                                <div class="icone">
+                                    <img src="./img/home.svg" alt="">
+                                </div>
+                                <div class="d-none"><p>Home</p></div>
                             </div>
-                            <div><p>Search</p></div>
-                        </div>
-                        <div class="menu-icons choice flex align-items-center  padding-l-10">
-                            <div class="icone">
-                                <img src="./img/libreria.svg" alt="">
+                            <div class="menu-icons choice flex align-items-center  padding-l-10">
+                                <div class="icone">
+                                    <img src="./img/search.svg" alt="">
+                                </div>
+                                <div class="d-none"><p>Search</p></div>
                             </div>
-                            <div><p> La tua libreria</p></div>
+                            <div class="menu-icons choice flex align-items-center  padding-l-10">
+                                <div class="icone">
+                                    <img src="./img/libreria.svg" alt="">
+                                </div>
+                                <div class="d-none"><p> La tua libreria</p></div>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <h2 class="padding-10 d-none">Playlist</h2>
+                        </div>
+                        <div class="flex align-items-center d-none">
+                            <i class="fa-solid fa-square-plus size-30 padding-l-10"></i>
+                            <p class="padding-l-10">Crea Playlist</p>
+                        </div>
+                        <div class="col-30-h flex">
+                            <div class="new-playlist padding-10">
+                                <ul class="d-none">
+                                    <li class="choice padding-b-10">Nome Playlist</li>
+                                    <li class="choice padding-b-10">Nome Playlist</li>
+                                    <li class="choice padding-b-10">Nome Playlist</li>
+                                    <li class="choice padding-b-10">Nome Playlist</li>
+                                    <li class="choice padding-b-10">Nome Playlist</li>
+                                    <li class="choice padding-b-10">Nome Playlist</li>
+                                    <li class="choice padding-b-10">Nome Playlist</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <h2 class="padding-10">Playlist</h2>
-                    </div>
-                    <div class="row align-items-center">
-                        <i class="fa-solid fa-square-plus size-30 padding-l-10"></i>
-                        <p class="padding-l-10">Crea Playlist</p>
-                    </div>
-                    <div class="row">
-                        <div class="new-playlist padding-10">
-                            <ul>
-                                <li class="choice padding-b-10">Nome Playlist</li>
-                                <li class="choice padding-b-10">Nome Playlist</li>
-                                <li class="choice padding-b-10">Nome Playlist</li>
-                                <li class="choice padding-b-10">Nome Playlist</li>
-                                <li class="choice padding-b-10">Nome Playlist</li>
-                                <li class="choice padding-b-10">Nome Playlist</li>
-                                <li class="choice padding-b-10">Nome Playlist</li>
-                            </ul>
+                    <div class="bottom-sidebar">
+                        <div class="column">
+                            <div class="download flex align-items-center">
+                                <img src="./img/download.svg" alt="Download">
+                                <p>Installa app</p>
+                            </div>
+                            <hr>
+                            <div class="profile flex align-items-center ">
+                                <img src="./img/profile.svg" alt="Avatar" class="avatar">
+                                <p>John Doe</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-
                     </div>
                 </div>
             </div>
         </div>
         <div class="main-content">
             <header class="padding-10">
-                <button class="upgrade choice br-20"> EFFETTUA L'UPGRADE </button>
+                <button class="upgrade br-20"> EFFETTUA L'UPGRADE </button>
             </header>
             <div class="container">
                 <div class="row padding-top-60">
@@ -89,8 +102,8 @@
                 <div class="row">
                     <div class="col-16 col-lg-25 col-mb-50">
                         <div class="content relative padding-10">
-                            <img src="./img/metal_lifting.jpg" alt="">
-                            <i class="fa-regular fa-circle-play absolute hidden size-50"></i>
+                            <img src="./img/metal_lifting.jpg" alt="" class="album-img">
+                            <i class="fa-regular fa-circle-play absolute d-none hover-play"></i>
                         </div>
                         <div class="text-align-center">
                             <h3> Heavy Metal</h3>
@@ -99,8 +112,8 @@
                     </div>
                     <div class="col-16 col-lg-25 col-mb-50">
                         <div class="content relative padding-10">
-                            <img src="./img/stranger.jpeg" alt="">
-                            <i class="fa-regular absolute fa-circle-play absolute hidden size-50"></i>
+                            <img src="./img/stranger.jpeg" alt="" class="album-img">
+                            <i class="fa-regular absolute fa-circle-play absolute d-none hover-play"></i>
                         </div>
                         <div class="text-align-center">
                             <h3> Stranger Things Vol. 1 (a Netflix Series Soundtrack)</h3>
@@ -109,8 +122,8 @@
                     </div>
                     <div class="col-16 col-lg-25 col-mb-50">
                         <div class="content  relative padding-10">
-                            <img src="./img/aquietplace.jpeg" alt="">
-                            <i class="fa-regular absolute fa-circle-play absolute hidden size-50"></i>
+                            <img src="./img/aquietplace.jpeg" alt="" class="album-img">
+                            <i class="fa-regular absolute fa-circle-play absolute d-none hover-play"></i>
                         </div>
                         <div class="text-align-center">
                             <h3> A quiet place</h3>
@@ -119,8 +132,8 @@
                     </div>
                     <div class="col-16 col-lg-25 col-mb-50">
                         <div class="content relative padding-10">
-                            <img src="./img/split.jpeg" alt="">
-                            <i class="fa-regular absolute fa-circle-play absolute hidden size-50"></i>
+                            <img src="./img/split.jpeg" alt="" class="album-img">
+                            <i class="fa-regular absolute fa-circle-play absolute d-none hover-play"></i>
                         </div>
                         <div class="text-align-center">
                             <h3> Split</h3>
@@ -129,8 +142,8 @@
                     </div>
                     <div class="col-16 col-lg-25 col-mb-50 ">
                         <div class="content relative padding-10">
-                            <img src="./img/cure.jpeg" alt="">
-                            <i class="fa-regular absolute fa-circle-play absolute hidden size-50"></i>
+                            <img src="./img/cure.jpeg" alt="" class="album-img">
+                            <i class="fa-regular absolute fa-circle-play absolute d-none hover-play "></i>
                         </div>
                         <div class="text-align-center">
                             <h3> A cure for welness</h3>
@@ -139,8 +152,8 @@
                     </div>
                     <div class="col-16 col-lg-25 col-mb-50 ">
                         <div class="content relative padding-10">
-                            <img src="./img/sinister.jpeg" alt="">
-                            <i class="fa-regular absolute fa-circle-play absolute hidden size-50"></i>
+                            <img src="./img/sinister.jpeg" alt="" class="album-img">
+                            <i class="fa-regular absolute fa-circle-play absolute d-none hover-play"></i>
                         </div>
                         <div class="text-align-center">
                             <h3> Sinister</h3>
@@ -156,7 +169,7 @@
                     <div class="col-16 col-lg-25 col-mb-50">
                         <div class="content relative padding-10">
                             <img src="./img/radar.jpeg" alt="">
-                            <i class="fa-regular absolute fa-circle-play absolute d-none size-50"></i>
+                            <i class="fa-regular absolute fa-circle-play absolute d-none hover-play"></i>
                         </div>
                         <div class="text-align-center">
                             <h3> Release Radar </h3>
@@ -165,7 +178,7 @@
                     <div class="col-16 col-lg-25 col-mb-50 ">
                         <div class="content relative padding-10">
                             <img src="./img/mixdaily.jpeg" alt="">
-                            <i class="fa-regular absolute fa-circle-play absolute d-none size-50"></i>
+                            <i class="fa-regular absolute fa-circle-play absolute d-none hover-play"></i>
                         </div>
                         <div class="text-align-center">
                             <h3> Daily Mix </h3>
@@ -212,8 +225,8 @@
                     <p class="mg-5 line"> Brano Nome</p>
                 </div>
                 <div class="flex align-items-center justify-content-center">
-                    <i class="fa-regular fa-heart mg-5"></i>
-                    <i class="fa-regular fa-folder mg-5"></i>
+                    <i class="fa-regular fa-heart mg-5 d-none"></i>
+                    <i class="fa-regular fa-folder mg-5 d-none"></i>
                 </div>
             </div>
         </div> 
@@ -238,8 +251,8 @@
         </div>
         <div class="col-25 flex align-items-center justify-content-center">
             <div class="flex align-items-center">
-                <i class="fas fa-bars mg-5"></i>
-                <i class="fas fa-desktop mg-5"></i>
+                <i class="fas fa-bars mg-5 d-none"></i>
+                <i class="fas fa-desktop mg-5 d-none"></i>
                 <i class="fas fa-volume-down mg-5"></i>
                 <div class="volume-bar">
                     <div class="volume">

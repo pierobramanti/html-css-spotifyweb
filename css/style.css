@@ -28,6 +28,11 @@ body{
     width: 100%;
 }
 
+.bottom-section i{
+    color: rgb(214, 205, 205);
+}
+
+
 .top-section{
     height: calc( 100vh - 100px );
     display: flex;
@@ -36,6 +41,11 @@ body{
 .side-bar{
     width: 250px;
     background-color: black;
+}
+
+.m-sidebar{
+    border: 1px solid white;
+
 }
 
 .main-content{
@@ -82,6 +92,7 @@ body{
     width: 100%;
 }
 
+
 .col-50 .buttons{
     text-align: center;
     height: 50%;
@@ -100,7 +111,6 @@ body{
     width: 80%;
 }
 
-
 header{
     position: fixed;
     z-index: 1;
@@ -109,7 +119,6 @@ header{
     background-color: rgba(0, 0, 0, 0.747);
     width:calc(100vw - 250px); 
     text-align: right;
-
 }
 
 /* UTYLITIES */
@@ -120,15 +129,17 @@ header{
 .mg-5{
     margin: 5px 5px;
 }
-.mg-bottom-10px{
-    margin-bottom: 10px;
+.mg-m-10px{
+    margin-m: 10px;
 }
+
+
 .padding-l-10{ 
     padding-left: 10px;
 }
 
 .padding-b-10{
-    padding-bottom: 10px;
+    padding-m: 10px;
 }
 
 .padding-10{
@@ -178,6 +189,7 @@ header{
 
 .btw{
     justify-content: space-between;
+
 }
 
 .around{
@@ -202,13 +214,17 @@ header{
     position: relative;
 }
 
-
+.hidden{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
 .absolute{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
 }
+
+
 /* STYLE */
 
 .upgrade{
@@ -232,6 +248,13 @@ header{
 
 .icone img{
     width: 100%;
+}
+
+.profile {
+    width: 100%;
+}
+.profile img{
+    width: 20px;
 }
 
 .new-playlist ul{
@@ -300,18 +323,65 @@ header{
     top: 0;
     left: 0;}
 
+.avatar{
+    border-radius:100px;
+    background-color: grey;
+    color: white;
+    border: 1px solid white;
+    margin: 0 5px 0 5px;
+}
+
+.side-bar{
+    font-size: 12px;
+}
+
+.download{
+    width: 100%;
+}
+
+.download img{
+    width: 20px;
+}
+
+.bottom-sidebar hr{
+    width: 80%;
+    margin: 10px 10px;
+}
+
 
 /* HOVER */
 
 .choice:hover{
     color: white;
-    font-size: 15px;
-    font-weight: 1000;
     cursor: pointer;
 }
-i:hover{
+.side-bar i:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.upgrade:hover{
     color: white;
     font-weight: 1000;
+    cursor:pointer;
+}
+
+.m-section i:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.hover-play{
+    font-size: 50px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0);
+    
+}
+
+.hover-play:hover{
+    color: rgb(255, 255, 255);
     cursor: pointer;
 }
 
@@ -319,6 +389,11 @@ i:hover{
     color: white;
     text-decoration: underline;
     cursor: pointer;
+}
+
+.bottom-section i:hover{
+    cursor: pointer;
+    color: white;
 }
 
 /* MEDIA QUEERY */
@@ -348,16 +423,16 @@ i:hover{
 
 @media screen and (max-width:480px ){
     .side-bar{
-        width: 150px;
+        width: 50px;
     }
     
     .main-content{
-        width: calc(100vw - 150px);
+        width: calc(100vw - 50px);
     }
 
     header{
-        left: 100px;
-        width:calc(100vw - 100px); 
+        left: 50px;
+        width:calc(100vw - 50px); 
     }
 
     .col-mb-50{
@@ -368,4 +443,16 @@ i:hover{
         width: calc( 100% / 3 );
     }
 
+    .d-none{
+        display: none;
+    }
+
+    .hidden{
+        visibility: visible;
+        height: 30px;
+        width: 30px;
+    }
+    .side-bar img{
+        width: 30px;
+    }
 }
